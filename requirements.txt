@@ -30,6 +30,7 @@ Flask-Script==2.0.6
 Flask-Security==3.0.0
 Flask-SQLAlchemy==2.3.2
 Flask-WTF==0.14.2
+gunicorn
 idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.10
