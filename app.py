@@ -13,8 +13,12 @@ pyppeteer.DEBUG = False
 headless = True
 # headless = False
 args = [
-    '--window-size=1024,768', '--no-sandbox', '--disable-setuid-sandbox',
-    '--ignore-certificate-errors'
+    '--window-size=1024,768',
+    '--no-sandbox',
+    '--disable-setuid-sandbox',
+    '--ignore-certificate-errors',
+    '--disable-dev-shm-usage',
+    '--single-process'
 ]
 
 loop = asyncio.get_event_loop()
