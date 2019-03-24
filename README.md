@@ -1,9 +1,10 @@
-# Quotes
+# TradingView Chart Data Extractor
 
-Heroku
+Example deployment on Heroku
+https:// 'APPURL' .herokuapp.com/quotes?url= 'URL-OF-PRIVATELY-PUBLISHED-CHART'
 
 ## Install
-```
+  ```
   pip3 install virtualenv
   python3 -m venv .
   source bin/activate
