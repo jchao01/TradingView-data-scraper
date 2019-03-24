@@ -1,1 +1,1 @@
-web: bundle exec flask server -p 5000
+web: gunicorn quotes.wsgi
