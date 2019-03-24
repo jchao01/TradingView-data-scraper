@@ -1,1 +1,1 @@
-web: gunicorn quotes.wsgi
+web: python3 app.py
