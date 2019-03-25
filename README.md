@@ -8,6 +8,7 @@ https:// 'APPURL' .herokuapp.com/quotes?url= 'URL-OF-PRIVATELY-PUBLISHED-CHART'
 Simply append the URL of a chart/idea published on TradingView to the link below. This is not the URL of a security's chart, but the URL for a user-published chart: https://tradingview-data.herokuapp.com/quotes?url=
 
 i.e. for this chart: https://www.tradingview.com/chart/SPY/vjYfwgMu-SPY-Export-Test/
+
 You'd use: https://tradingview-data.herokuapp.com/quotes?url=https://www.tradingview.com/chart/SPY/vjYfwgMu-SPY-Export-Test/
 
 ## Install
