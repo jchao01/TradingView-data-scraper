@@ -140,8 +140,7 @@ def quotes():
                         for number in range(count_columns):
                             columns.append('"' + _name + '"')
 
-                r = '"' + title + '"' + (',' * (len(columns) - 1)) + '\n'
-                r += ','.join(columns) + '\n'
+                r = ','.join(columns) + '\n'
 
                 i = 0
                 close = None
@@ -166,7 +165,7 @@ def quotes():
                     i += 1
 
             return Response(r, mimetype="text/csv",
-                            headers={"Content-disposition": "attachment; filename=quotes.csv"})
+                            headers={"Content-disposition": "attachment; filename= " + title + ".csv"})
         return '{"error":"no url parameter"}'
     except Exception as e:
         print('--->  ', e)
