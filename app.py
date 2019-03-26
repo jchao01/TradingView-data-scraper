@@ -83,6 +83,7 @@ def quotes():
                         main = item2
                     elif item2['type'] == 'Study':
                         indicators.append(item2)
+            title = 'Untitled'
             r = '\nno data\n'
             if main:
                 title = soup.find(attrs={"class": "pane-legend-title__container"}).get_text()
@@ -140,8 +141,9 @@ def quotes():
                         for number in range(count_columns):
                             columns.append('"' + _name + '"')
 
-                r = '"' + title + '"' + (',' * (len(columns) - 1)) + '\n'
-                r += ','.join(columns) + '\n'
+                # r = '"' + title + '"' + (',' * (len(columns) - 1)) + '\n'
+                # r += ','.join(columns) + '\n'
+                r = ','.join(columns) + '\n'
 
                 i = 0
                 close = None
@@ -164,12 +166,12 @@ def quotes():
                         item['value'][0] * 1000, utc=True).format("YYYY-MM-DD HH:mm:ss") + ',' + ','.join(
                         data_ind) + '\n'
                     i += 1
-
+            title = re.sub(r'[^\w\d&]+', '_', title.strip()).strip()
+            print(title)
             return Response(r, mimetype="text/csv",
-                            headers={"Content-disposition": "attachment; filename=quotes.csv"})
+                            headers={"Content-disposition": "attachment; filename=" + title + ".csv"})
         return '{"error":"no url parameter"}'
     except Exception as e:
-        print('--->  ', e)
         return '{"error":"' + str(e) + '"}'
 
 
