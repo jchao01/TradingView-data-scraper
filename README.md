@@ -1,7 +1,11 @@
 # TradingView Chart Data Extractor
 
-Example deployment on Heroku
-https:// 'APPURL' .herokuapp.com/quotes?url= 'URL-OF-PRIVATELY-PUBLISHED-CHART'
+## Video Tutorial
+
+How-to screen recording: https://d.pr/v/VGCDNf
+The resulting file from the tutorial above: https://d.pr/f/bnQ75v
+
+Ensure that you zoom/pan such that the oldest date you desire is visible on TradingView before publishing the chart. Too many indicators or too low a time resolution will increase the data points and potentially overload the free server. Avoid this by hosting/running the script on your local machine or scraping multiple times with fewer indicators and manually combine the CSV afterwards.
 
 ## Usage
 
