@@ -29,6 +29,6 @@ soupsieve==1.8
 times==0.7
 tqdm==4.31.1
 tzlocal==1.5.1
-urllib3==1.24.1
+urllib3==1.24.2
 websockets==7.0
 werkzeug==0.15.3
