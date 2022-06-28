@@ -5,7 +5,7 @@
 #    pip-compile requirements.txt
 #
 appdirs==1.4.3
-arrow==0.13.1
+arrow==0.15.1
 asyncio==3.4.3
 beautifulsoup4==4.7.1
 bs4==0.0.1
