@@ -15,7 +15,7 @@ flask==1.0.2
 gunicorn==19.9.0
 itsdangerous==1.1.0
 jinja2==2.10
-lxml==4.3.2
+lxml==4.9.1
 markupsafe==1.1.1
 moment==0.8.2
 nest-asyncio==1.0.0
